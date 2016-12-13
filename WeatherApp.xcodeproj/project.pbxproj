@@ -10,6 +10,9 @@
 		021ED894F48DEDC7CC1229E6 /* libPods-WeatherAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB00C896D910B0F71862484 /* libPods-WeatherAppUITests.a */; };
 		3FE579B08C3C04995FF08CF1 /* libPods-WeatherAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A8C55545D2EAE3C4FB4560 /* libPods-WeatherAppTests.a */; };
 		A8ABE6F6CD677AF878A01B63 /* libPods-WeatherApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B427400E39FE1E5C5A122D2D /* libPods-WeatherApp.a */; };
+		C013A6EA1DFFC1D6007F44E3 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C013A6E91DFFC1D6007F44E3 /* HttpRequest.m */; };
+		C013A6F11DFFE947007F44E3 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C013A6F01DFFE947007F44E3 /* BaseTableCell.m */; };
+		C013A6F41DFFF1AB007F44E3 /* FutureWeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C013A6F31DFFF1AB007F44E3 /* FutureWeatherCell.m */; };
 		C0246F841DFE94F500FA30FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0246F831DFE94F500FA30FA /* main.m */; };
 		C0246F871DFE94F500FA30FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0246F861DFE94F500FA30FA /* AppDelegate.m */; };
 		C0246F8A1DFE94F500FA30FA /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0246F891DFE94F500FA30FA /* WeatherViewController.m */; };
@@ -48,6 +51,12 @@
 		679BFE844C4A56C15E4025A7 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		69A8C55545D2EAE3C4FB4560 /* libPods-WeatherAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B427400E39FE1E5C5A122D2D /* libPods-WeatherApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C013A6E81DFFC1D6007F44E3 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		C013A6E91DFFC1D6007F44E3 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		C013A6EF1DFFE947007F44E3 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
+		C013A6F01DFFE947007F44E3 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
+		C013A6F21DFFF1AB007F44E3 /* FutureWeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FutureWeatherCell.h; sourceTree = "<group>"; };
+		C013A6F31DFFF1AB007F44E3 /* FutureWeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FutureWeatherCell.m; sourceTree = "<group>"; };
 		C0246F7F1DFE94F500FA30FA /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0246F831DFE94F500FA30FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0246F851DFE94F500FA30FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +133,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C013A6E71DFFC197007F44E3 /* HttpUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C013A6E81DFFC1D6007F44E3 /* HttpRequest.h */,
+				C013A6E91DFFC1D6007F44E3 /* HttpRequest.m */,
+			);
+			name = HttpUtils;
+			sourceTree = "<group>";
+		};
+		C013A6EE1DFFE91A007F44E3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C013A6EF1DFFE947007F44E3 /* BaseTableCell.h */,
+				C013A6F01DFFE947007F44E3 /* BaseTableCell.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		C0246F761DFE94F500FA30FA = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +176,8 @@
 		C0246F811DFE94F500FA30FA /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				C013A6EE1DFFE91A007F44E3 /* Base */,
+				C013A6E71DFFC197007F44E3 /* HttpUtils */,
 				C0246FBA1DFEC11F00FA30FA /* Macro */,
 				C0246FB61DFEC0CF00FA30FA /* Category */,
 				C0246FC31DFEC89000FA30FA /* Model */,
@@ -223,6 +252,8 @@
 			children = (
 				C0246FC41DFEC8F400FA30FA /* AddressHeaderView.h */,
 				C0246FC51DFEC8F400FA30FA /* AddressHeaderView.m */,
+				C013A6F21DFFF1AB007F44E3 /* FutureWeatherCell.h */,
+				C013A6F31DFFF1AB007F44E3 /* FutureWeatherCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -503,7 +534,10 @@
 				C0246FBE1DFEC1A600FA30FA /* UIColor+Ext.m in Sources */,
 				C0246F8A1DFE94F500FA30FA /* WeatherViewController.m in Sources */,
 				C0246F871DFE94F500FA30FA /* AppDelegate.m in Sources */,
+				C013A6F41DFFF1AB007F44E3 /* FutureWeatherCell.m in Sources */,
 				C0246FB91DFEC11100FA30FA /* UIFont+SM_Ext.m in Sources */,
+				C013A6F11DFFE947007F44E3 /* BaseTableCell.m in Sources */,
+				C013A6EA1DFFC1D6007F44E3 /* HttpRequest.m in Sources */,
 				C0246FC61DFEC8F400FA30FA /* AddressHeaderView.m in Sources */,
 				C0246F841DFE94F500FA30FA /* main.m in Sources */,
 			);

@@ -10,4 +10,8 @@
 
 @interface AddressHeaderView : UIView
 
+@property (nonatomic, strong) UILabel *addressLabel;
+@property (nonatomic, strong) UILabel *weatherLabel;
+@property (nonatomic, strong) UILabel *temperatureLabel;
+
 @end

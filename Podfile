@@ -7,7 +7,9 @@ target 'WeatherApp' do
 
   # Pods for WeatherApp
 
-pod 'Masonry'
+    pod 'Masonry'
+    pod 'AFNetworking'
+    pod 'SVProgressHUD','~>1.1.3'
 
   target 'WeatherAppTests' do
     inherit! :search_paths

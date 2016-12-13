@@ -13,6 +13,10 @@
 #import "UIColor+Ext.h"
 #import "Masonry.h"
 
+//请求天气数据的接口
+#define WeatherInterface    @"http://v.juhe.cn/weather/index"
+#define HttpKey             @"7f8e7f31f2d347559d6dd127111572a8"
+
 /**
  *  px转换
  */
@@ -22,6 +26,8 @@
 /**
  *  字体
  */
+
+#define SM_MyCFont(px)  [UIFont customFontOfSize2:(px/2.2)]
 #define SM_CFont(px)    [UIFont customFontOfSize:(px/2.2)]                //自定义字体
 #define SM_CBFont(px)   [UIFont customBoldFontOfSize:(px/2.2)]            //自定义粗体
 #define SM_SFont(px)    [UIFont systemFontOfSize:(px/2.2)]                //系统字体

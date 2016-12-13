@@ -12,16 +12,7 @@
 
 + (UIFont *)customFontOfSize:(CGFloat)size
 {
-//    NSArray *familyNames = [UIFont familyNames];
-//    for(NSString *familyName in familyNames)
-//    {
-//        NSLog(@"%@", familyName);
-//        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
-//        for(NSString *fontName in fontNames)
-//        {
-//            NSLog(@"\t%@", fontName);
-//        }  
-//    }
+
     UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Light" size:size];
     return  font? font :[UIFont systemFontOfSize:size];
 }
@@ -30,6 +21,15 @@
 {
     UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:size];
     return font? font : [UIFont boldSystemFontOfSize:size];
+}
+
++ (UIFont *)customFontOfSize2:(CGFloat)size
+{
+    UIFont *font = [UIFont fontWithName:@"CourierNewPSMT" size:size];
+//    font = UIFontWeightThin;
+    
+    return  font? font :[UIFont systemFontOfSize:size];
+    
 }
 
 @end

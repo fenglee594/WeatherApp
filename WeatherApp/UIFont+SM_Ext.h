@@ -10,6 +10,7 @@
 
 @interface UIFont (SM_Ext)
 
++ (UIFont *)customFontOfSize2:(CGFloat)size;
 
 + (UIFont *)customFontOfSize:(CGFloat)size;
 
