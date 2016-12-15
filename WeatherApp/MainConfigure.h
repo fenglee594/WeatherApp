@@ -11,7 +11,10 @@
 
 #import "UIFont+SM_Ext.h"
 #import "UIColor+Ext.h"
+#import "UIImage+Color.h"
 #import "Masonry.h"
+#import "MJExtension.h"
+#import "ResultModel.h"
 
 //请求天气数据的接口
 #define WeatherInterface    @"http://v.juhe.cn/weather/index"
@@ -46,7 +49,7 @@
 #define SM_darkGrayColor    HEXCOLOR(@"394d52")     //深灰
 #define SM_whiteColor       HEXCOLOR(@"ffffff")     //白
 #define SM_blackColor       HEXCOLOR(@"2A2A2A")     //黑
-
+#define SM_DarkBlue         HEXCOLOR(@"#2B7DB1")    //深蓝    
 
 /**
  *  屏幕尺寸

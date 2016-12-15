@@ -1,9 +1,9 @@
 //
-//  BaseTableViewCell.h
-//  WeatherApp
+//  BaseTableCell.h
+//  Follows
 //
-//  Created by 李峰 on 2016/12/13.
-//  Copyright © 2016年 李峰. All rights reserved.
+//  Created by liangshangjia on 16/5/11.
+//  Copyright © 2016年 SAMI-Network-Technology. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

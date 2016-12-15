@@ -8,14 +8,15 @@
 
 #import "BaseTableCell.h"
 
-@interface FutureWeatherCell : UITableViewCell
+@interface FutureWeatherCell : BaseTableCell
 
 @property (nonatomic, strong) UILabel *weekLabel;
-@property (nonatomic, strong) UIImage *weatherImage;
-@property (nonatomic, strong) UILabel *maxTempurature;
-@property (nonatomic, strong) UILabel *minTempurature;
+@property (nonatomic, strong) UIImageView *weatherImage;
+//@property (nonatomic, strong) UILabel *maxTempurature;
+//@property (nonatomic, strong) UILabel *minTempurature;
+@property (nonatomic, strong) UILabel *temperatureLabel;
 
 //@property
 
-+ (CGFloat)cellHeight;
+//+ (CGFloat)cellHeight;
 @end

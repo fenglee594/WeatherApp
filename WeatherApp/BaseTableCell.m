@@ -1,9 +1,9 @@
 //
-//  BaseTableViewCell.m
-//  WeatherApp
+//  BaseTableCell.m
+//  Follows
 //
-//  Created by 李峰 on 2016/12/13.
-//  Copyright © 2016年 李峰. All rights reserved.
+//  Created by liangshangjia on 16/5/11.
+//  Copyright © 2016年 SAMI-Network-Technology. All rights reserved.
 //
 
 #import "BaseTableCell.h"
@@ -36,12 +36,12 @@
 
 - (void)configure
 {
-    //    self.clipsToBounds                  = YES;
+//    self.clipsToBounds                  = YES;
     self.selectionStyle                 = UITableViewCellSelectionStyleNone;
     self.backgroundColor                = SM_backGroundColor;
-    self.contentView.backgroundColor    = SM_whiteColor;
+    self.contentView.backgroundColor    = [UIColor clearColor];
     self.translatesAutoresizingMaskIntoConstraints = NO;
-    
+
     [self.contentView addSubview:self.bgView];
     [self.bgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(@0);
@@ -66,7 +66,7 @@
 
 + (CGFloat)cellHeight
 {
-    return DBL_EPSILON;
+    return SM_SIZE(100);
 }
 
 - (void)dealloc

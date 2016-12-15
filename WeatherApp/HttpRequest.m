@@ -11,9 +11,10 @@
 
 @implementation HttpRequest
 
-+ (NSDictionary *) WeatherInfoFromHttpUrl:(NSString *)url
-                    parameters:(NSDictionary *)parameters
-{   __block NSDictionary *result;
++ (void) WeatherInfoFromHttpUrl:(NSString *)url
+                               parameters:(NSDictionary *)parameters
+                             onCompletion:(WeatherBlock)weatherData
+{   //__block NSDictionary *result = [[NSDictionary alloc] init];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
@@ -21,16 +22,15 @@
     [manager GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *result = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
-        NSString *result1 = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSLog(@"%@",result);
+        id result = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
+//        NSString *result1 = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//        NSLog(@"%@",result);
+        !weatherData?:weatherData(result[@"result"]);
         
-        NSLog(@"%@",result1);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"error_code:%@ , reason:%@",result[@"error_code"],result[@"reason"]);
+//        NSLog(@"error_code:%@ , reason:%@",result[@"error_code"],result[@"reason"]);
     }];
-    return result;
 }
 
 @end

@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^WeatherBlock) (NSDictionary *result);
+
 @interface HttpRequest : NSObject
 
-+ (NSDictionary *) WeatherInfoFromHttpUrl:(NSString*)url
-                     parameters:(NSDictionary *)parameters;
+
++ (void) WeatherInfoFromHttpUrl:(NSString*)url
+                               parameters:(NSDictionary *)parameters
+                             onCompletion:(WeatherBlock)weatherData;
 
 
 @end

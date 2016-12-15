@@ -10,6 +10,7 @@ target 'WeatherApp' do
     pod 'Masonry'
     pod 'AFNetworking'
     pod 'SVProgressHUD','~>1.1.3'
+    pod 'MJExtension'
 
   target 'WeatherAppTests' do
     inherit! :search_paths

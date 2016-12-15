@@ -15,6 +15,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         [self setUpControls];
+        self.backgroundColor = SM_DarkBlue;
     }
     return self;
 }
@@ -31,7 +32,7 @@
         make.height.equalTo(@(55));
     }];
     _addressLabel.font = SM_CFont(68);
-    _addressLabel.text = @"佛山市";
+//    _addressLabel.text = @"佛山市";
     _addressLabel.textColor = SM_whiteColor;
     _addressLabel.textAlignment = NSTextAlignmentCenter;
     
@@ -45,7 +46,7 @@
         make.height.equalTo(@(30));
     }];
     _weatherLabel.font = SM_CFont(40);
-    _weatherLabel.text = @"晴间多云";
+//    _weatherLabel.text = @"晴间多云";
     _weatherLabel.textColor = SM_whiteColor;
     _weatherLabel.textAlignment = NSTextAlignmentCenter;
     
@@ -59,7 +60,7 @@
         make.height.equalTo(self.mas_height).multipliedBy(0.38);
     }];
     _temperatureLabel.font = [UIFont systemFontOfSize:75.f weight:UIFontWeightUltraLight];
-    _temperatureLabel.text = @"25˚";
+//    _temperatureLabel.text = @"25˚";
     _temperatureLabel.textColor = SM_whiteColor;
 //    _temperatureLabel.backgroundColor = SM_LemonColor;
     _temperatureLabel.textAlignment = NSTextAlignmentCenter;

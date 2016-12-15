@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
+#import "MainConfigure.h"
 
-@interface WeatherViewController : UIViewController
+typedef void (^getDateBlock) (ResultModel *data);
+
+@interface WeatherViewController : BaseTableViewController
 
 
 @end
