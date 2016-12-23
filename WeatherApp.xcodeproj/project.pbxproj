@@ -24,6 +24,7 @@
 		C0246FC61DFEC8F400FA30FA /* AddressHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0246FC51DFEC8F400FA30FA /* AddressHeaderView.m */; };
 		C04F911E1E02480900F072FF /* LaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C04F911D1E02480900F072FF /* LaunchScreen.jpg */; };
 		C04F91221E02492D00F072FF /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04F91211E02492D00F072FF /* Image.xcassets */; };
+		C053547D1E0CCDFD009D6B59 /* Rainy.png in Resources */ = {isa = PBXBuildFile; fileRef = C053547C1E0CCDFD009D6B59 /* Rainy.png */; };
 		C08C13731E038BB90011D820 /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C13721E038BB90011D820 /* LeftSortsViewController.m */; };
 		C08C13791E038D470011D820 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C13761E038D470011D820 /* LeftSlideViewController.m */; };
 		C08C137A1E038D470011D820 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C13781E038D470011D820 /* UIView_extra.m */; };
@@ -37,9 +38,7 @@
 		C0F086481E00EB1600E8921C /* WeatherTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F086471E00EB1600E8921C /* WeatherTableView.m */; };
 		C0F0864B1E00EF5A00E8921C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F0864A1E00EF5A00E8921C /* BaseViewController.m */; };
 		C0F0864E1E0131D400E8921C /* WeatherDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F0864D1E0131D400E8921C /* WeatherDetailView.m */; };
-		C0F086511E01696E00E8921C /* RainyWeather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F086501E01696E00E8921C /* RainyWeather@2x.png */; };
 		C0F086541E016EC800E8921C /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F086531E016EC800E8921C /* UIImage+Color.m */; };
-		C0F086561E01772900E8921C /* Rainy.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F086551E01772900E8921C /* Rainy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +96,7 @@
 		C0246FC51DFEC8F400FA30FA /* AddressHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressHeaderView.m; sourceTree = "<group>"; };
 		C04F911D1E02480900F072FF /* LaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchScreen.jpg; sourceTree = "<group>"; };
 		C04F91211E02492D00F072FF /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		C053547C1E0CCDFD009D6B59 /* Rainy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rainy.png; sourceTree = "<group>"; };
 		C08C13711E038BB90011D820 /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSortsViewController.h; sourceTree = "<group>"; };
 		C08C13721E038BB90011D820 /* LeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSortsViewController.m; sourceTree = "<group>"; };
 		C08C13751E038D470011D820 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
@@ -124,10 +124,8 @@
 		C0F0864C1E0131D400E8921C /* WeatherDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDetailView.h; sourceTree = "<group>"; };
 		C0F0864D1E0131D400E8921C /* WeatherDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDetailView.m; sourceTree = "<group>"; };
 		C0F0864F1E01367D00E8921C /* WeatherList.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = WeatherList.geojson; sourceTree = "<group>"; };
-		C0F086501E01696E00E8921C /* RainyWeather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RainyWeather@2x.png"; path = "../../../Downloads/RainyWeather@2x.png"; sourceTree = "<group>"; };
 		C0F086521E016EC800E8921C /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		C0F086531E016EC800E8921C /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
-		C0F086551E01772900E8921C /* Rainy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rainy.png; path = ../../../Downloads/Rainy.png; sourceTree = "<group>"; };
 		CFB00C896D910B0F71862484 /* libPods-WeatherAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -241,15 +239,14 @@
 		C0246F821DFE94F500FA30FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C053547C1E0CCDFD009D6B59 /* Rainy.png */,
 				C04F911D1E02480900F072FF /* LaunchScreen.jpg */,
-				C0F086551E01772900E8921C /* Rainy.png */,
 				C0246F851DFE94F500FA30FA /* AppDelegate.h */,
 				C0246F861DFE94F500FA30FA /* AppDelegate.m */,
 				C0246F901DFE94F500FA30FA /* LaunchScreen.storyboard */,
 				C0246F931DFE94F500FA30FA /* Info.plist */,
 				C0246F831DFE94F500FA30FA /* main.m */,
 				C0F0864F1E01367D00E8921C /* WeatherList.geojson */,
-				C0F086501E01696E00E8921C /* RainyWeather@2x.png */,
 				C04F91211E02492D00F072FF /* Image.xcassets */,
 			);
 			name = "Supporting Files";
@@ -504,10 +501,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C04F91221E02492D00F072FF /* Image.xcassets in Resources */,
-				C0F086511E01696E00E8921C /* RainyWeather@2x.png in Resources */,
 				C0246F921DFE94F500FA30FA /* LaunchScreen.storyboard in Resources */,
 				C04F911E1E02480900F072FF /* LaunchScreen.jpg in Resources */,
-				C0F086561E01772900E8921C /* Rainy.png in Resources */,
+				C053547D1E0CCDFD009D6B59 /* Rainy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
