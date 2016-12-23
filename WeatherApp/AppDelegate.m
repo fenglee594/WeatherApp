@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WeatherViewController.h"
+#import "LeftSortsViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,10 +20,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//设置窗口
-    WeatherViewController *Vc = [[WeatherViewController alloc] init];
-    self.window.rootViewController = Vc;//设置根视图
-//    Vc.view.backgroundColor = [UIColor orangeColor];
+//    WeatherViewController *Vc = [[WeatherViewController alloc] init];
+//    self.window.rootViewController = Vc;//设置根视图
     [self.window makeKeyAndVisible];//显示
+    
+    WeatherViewController *weatherVc = [[WeatherViewController alloc] init];
+//    self.mainNavigationController = [[UINavigationController alloc] initWithRootViewController:weatherVc];
+    self.mainNavigationController = weatherVc;
+    
+    LeftSortsViewController *leftVC = [[LeftSortsViewController alloc] init];
+    self.LeftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.mainNavigationController];
+    
+    self.window.rootViewController = self.LeftSlideVC;
+    
+//    [UINavigationBar appearance]
     return YES;
 }
 

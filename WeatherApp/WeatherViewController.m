@@ -73,19 +73,19 @@
     AddressHeaderView *headerView = nil;
     if (section == 0) {
       headerView = [[AddressHeaderView alloc] initWithFrame:CGRectMake(0, 0, SM_SCREEN_WIDTH, 0.4*SM_SCREEN_HEIGHT)];
-        _weatherData = [[ResultModel alloc] init];
-        NSString *city = @"上海";
-        [city stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-        NSDictionary *parameters =@{@"dtype"    :   @"json",
-                                    @"format"   :   @"1",
-                                    @"key"      :   HttpKey,
-                                    @"cityname" :   city};
-        [HttpRequest WeatherInfoFromHttpUrl:WeatherInterface parameters:parameters onCompletion:^(NSDictionary *result) {
-            _weatherData = [ResultModel mj_objectWithKeyValues:result];
-            headerView.addressLabel.text = _weatherData.today.city;
-            headerView.weatherLabel.text = _weatherData.today.weather;
-            headerView.temperatureLabel.text = [_weatherData.sk.temp stringByAppendingString:@"º"];
-        }];
+//        _weatherData = [[ResultModel alloc] init];
+//        NSString *city = @"上海";
+//        [city stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+//        NSDictionary *parameters =@{@"dtype"    :   @"json",
+//                                    @"format"   :   @"1",
+//                                    @"key"      :   HttpKey,
+//                                    @"cityname" :   city};
+//        [HttpRequest WeatherInfoFromHttpUrl:WeatherInterface parameters:parameters onCompletion:^(NSDictionary *result) {
+//            _weatherData = [ResultModel mj_objectWithKeyValues:result];
+//            headerView.addressLabel.text = _weatherData.today.city;
+//            headerView.weatherLabel.text = _weatherData.today.weather;
+//            headerView.temperatureLabel.text = [_weatherData.sk.temp stringByAppendingString:@"º"];
+//        }];
         
         
     }
@@ -110,17 +110,17 @@
                                 @"format"   :   @"1",
                                 @"key"      :   HttpKey,
                                 @"cityname" :   city};
-    [HttpRequest WeatherInfoFromHttpUrl:WeatherInterface parameters:parameters onCompletion:^(NSDictionary *result) {
-        _weatherData = [ResultModel mj_objectWithKeyValues:result];
-//        detailView.todayDetail.text = [NSString stringWithFormat:@"今天温度：%@",];
-        detailView.todayDetail.text = [NSString stringWithFormat:@"   今天温度：%@，%@，%@",_weatherData.today.temperature,_weatherData.today.dressing_index,_weatherData.today.dressing_advice];
-        detailView.temperature.text = _weatherData.today.temperature;
-        detailView.windDirection.text = _weatherData.sk.wind_direction;
-        detailView.windStrength.text = _weatherData.sk.wind_strength;
-        detailView.humidity.text = _weatherData.sk.humidity;
-        detailView.dressingIndex.text = _weatherData.today.dressing_index;
-        detailView.updateTime.text = _weatherData.sk.time;
-    }];
+//    [HttpRequest WeatherInfoFromHttpUrl:WeatherInterface parameters:parameters onCompletion:^(NSDictionary *result) {
+//        _weatherData = [ResultModel mj_objectWithKeyValues:result];
+////        detailView.todayDetail.text = [NSString stringWithFormat:@"今天温度：%@",];
+//        detailView.todayDetail.text = [NSString stringWithFormat:@"   今天温度：%@，%@，%@",_weatherData.today.temperature,_weatherData.today.dressing_index,_weatherData.today.dressing_advice];
+//        detailView.temperature.text = _weatherData.today.temperature;
+//        detailView.windDirection.text = _weatherData.sk.wind_direction;
+//        detailView.windStrength.text = _weatherData.sk.wind_strength;
+//        detailView.humidity.text = _weatherData.sk.humidity;
+//        detailView.dressingIndex.text = _weatherData.today.dressing_index;
+//        detailView.updateTime.text = _weatherData.sk.time;
+//    }];
     return detailView;
 }
 

@@ -24,6 +24,10 @@
 		C0246FC61DFEC8F400FA30FA /* AddressHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0246FC51DFEC8F400FA30FA /* AddressHeaderView.m */; };
 		C04F911E1E02480900F072FF /* LaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C04F911D1E02480900F072FF /* LaunchScreen.jpg */; };
 		C04F91221E02492D00F072FF /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04F91211E02492D00F072FF /* Image.xcassets */; };
+		C08C13731E038BB90011D820 /* LeftSortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C13721E038BB90011D820 /* LeftSortsViewController.m */; };
+		C08C13791E038D470011D820 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C13761E038D470011D820 /* LeftSlideViewController.m */; };
+		C08C137A1E038D470011D820 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C13781E038D470011D820 /* UIView_extra.m */; };
+		C08C137E1E03A09A0011D820 /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C08C137D1E03A09A0011D820 /* AddressCell.m */; };
 		C0C477371E02742A00316134 /* SKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C477361E02742A00316134 /* SKModel.m */; };
 		C0C4773A1E0276BB00316134 /* TodayWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C477391E0276BB00316134 /* TodayWeatherModel.m */; };
 		C0C4773D1E0276D900316134 /* FutureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C4773C1E0276D900316134 /* FutureModel.m */; };
@@ -93,6 +97,14 @@
 		C0246FC51DFEC8F400FA30FA /* AddressHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressHeaderView.m; sourceTree = "<group>"; };
 		C04F911D1E02480900F072FF /* LaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchScreen.jpg; sourceTree = "<group>"; };
 		C04F91211E02492D00F072FF /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		C08C13711E038BB90011D820 /* LeftSortsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSortsViewController.h; sourceTree = "<group>"; };
+		C08C13721E038BB90011D820 /* LeftSortsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSortsViewController.m; sourceTree = "<group>"; };
+		C08C13751E038D470011D820 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		C08C13761E038D470011D820 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		C08C13771E038D470011D820 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
+		C08C13781E038D470011D820 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
+		C08C137C1E03A09A0011D820 /* AddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
+		C08C137D1E03A09A0011D820 /* AddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
 		C0C477351E02742A00316134 /* SKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKModel.h; sourceTree = "<group>"; };
 		C0C477361E02742A00316134 /* SKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKModel.m; sourceTree = "<group>"; };
 		C0C477381E0276BB00316134 /* TodayWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayWeatherModel.h; sourceTree = "<group>"; };
@@ -264,6 +276,9 @@
 		C0246FB51DFEC0AB00FA30FA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C08C13741E038D1C0011D820 /* LeftSlideViewController */,
+				C08C13711E038BB90011D820 /* LeftSortsViewController.h */,
+				C08C13721E038BB90011D820 /* LeftSortsViewController.m */,
 				C0246F881DFE94F500FA30FA /* WeatherViewController.h */,
 				C0246F891DFE94F500FA30FA /* WeatherViewController.m */,
 			);
@@ -294,6 +309,7 @@
 		C0246FC21DFEC87000FA30FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C08C137B1E03A0550011D820 /* LeftAddressView */,
 				C0246FC41DFEC8F400FA30FA /* AddressHeaderView.h */,
 				C0246FC51DFEC8F400FA30FA /* AddressHeaderView.m */,
 				C013A6F21DFFF1AB007F44E3 /* FutureWeatherCell.h */,
@@ -319,6 +335,26 @@
 				C0C4773F1E02825300316134 /* ResultModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C08C13741E038D1C0011D820 /* LeftSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C08C13751E038D470011D820 /* LeftSlideViewController.h */,
+				C08C13761E038D470011D820 /* LeftSlideViewController.m */,
+				C08C13771E038D470011D820 /* UIView_extra.h */,
+				C08C13781E038D470011D820 /* UIView_extra.m */,
+			);
+			name = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		C08C137B1E03A0550011D820 /* LeftAddressView */ = {
+			isa = PBXGroup;
+			children = (
+				C08C137C1E03A09A0011D820 /* AddressCell.h */,
+				C08C137D1E03A09A0011D820 /* AddressCell.m */,
+			);
+			name = LeftAddressView;
 			sourceTree = "<group>";
 		};
 		C0F0863D1E00E7EB00E8921C /* Controller */ = {
@@ -624,10 +660,14 @@
 				C0F086481E00EB1600E8921C /* WeatherTableView.m in Sources */,
 				C0246FBE1DFEC1A600FA30FA /* UIColor+Ext.m in Sources */,
 				C0246F8A1DFE94F500FA30FA /* WeatherViewController.m in Sources */,
+				C08C13731E038BB90011D820 /* LeftSortsViewController.m in Sources */,
 				C0C477371E02742A00316134 /* SKModel.m in Sources */,
 				C0246F871DFE94F500FA30FA /* AppDelegate.m in Sources */,
+				C08C13791E038D470011D820 /* LeftSlideViewController.m in Sources */,
+				C08C137E1E03A09A0011D820 /* AddressCell.m in Sources */,
 				C0F0864E1E0131D400E8921C /* WeatherDetailView.m in Sources */,
 				C0C477431E0283AA00316134 /* FutureDaysModel.m in Sources */,
+				C08C137A1E038D470011D820 /* UIView_extra.m in Sources */,
 				C013A6F41DFFF1AB007F44E3 /* FutureWeatherCell.m in Sources */,
 				C0F086421E00E8EE00E8921C /* BaseTableViewController.m in Sources */,
 				C0246FB91DFEC11100FA30FA /* UIFont+SM_Ext.m in Sources */,
